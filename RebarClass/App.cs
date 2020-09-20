@@ -31,9 +31,10 @@ namespace RebarClass
 
             PushButtonData pbd =
                 new PushButtonData("WriteRebarclass", "Заполнить\nкласс", assemblyPath, "RebarClass.Command");
-            //Добавляем кнопку 1:
+            //Добавляем иконки для кнопки предвариельно загрузив их в файл .dll:
             pbd.LargeImage = PngImageSource("RebarClass.Resources.equipment.png");
             pbd.Image = PngImageSource("RebarClass.Resources.equipment.png");
+            //Добавляем кнопку 1:
             panel.AddItem(pbd);
 
             PushButtonData pbd1 =
